@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="proximos_partidos">Próximos Partidos</string>
+    <string name="partidos_anteriores">Partidos Anteriores</string>
+  
     <string name="hello">Hello World, Click Me!</string>
     <string name="app_name">Lasallistas.Droid</string>
 </resources>

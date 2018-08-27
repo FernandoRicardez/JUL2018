@@ -18,9 +18,12 @@ namespace Lasallistas.Droid
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.myButton);
+            
+            //Button button = FindViewById<Button>(Resource.Id.myButton);
 
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+            //button.Click += delegate { button.Text = $"{count++} clicks!"; };
+
+
         }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using Lasallistas.Data;
 using Newtonsoft.Json;
 
 namespace Lasallistas.Models
 {
+    /*
     public delegate void Callback(List<DailyMenu> dailyMenus, string message);
 
     public class Universidad
@@ -197,4 +199,5 @@ namespace Lasallistas.Models
             }
         }
     }
+    */
 }
