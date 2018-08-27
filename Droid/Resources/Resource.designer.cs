@@ -45,7 +45,10 @@ namespace Lasallistas.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Juegos = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
@@ -76,17 +79,26 @@ namespace Lasallistas.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040006
+			public const int app_name = 2130968582;
+			
 			// aapt resource value: 0x7f040003
-			public const int app_name = 2130968579;
+			public const int campeon = 2130968579;
 			
 			// aapt resource value: 0x7f040002
-			public const int hello = 2130968578;
+			public const int de_la_salle_bajio = 2130968578;
+			
+			// aapt resource value: 0x7f040005
+			public const int hello = 2130968581;
 			
 			// aapt resource value: 0x7f040001
 			public const int partidos_anteriores = 2130968577;
 			
 			// aapt resource value: 0x7f040000
 			public const int proximos_partidos = 2130968576;
+			
+			// aapt resource value: 0x7f040004
+			public const int sub_campeon = 2130968580;
 			
 			static String()
 			{

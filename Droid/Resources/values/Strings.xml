@@ -3,6 +3,9 @@
 
     <string name="proximos_partidos">Próximos Partidos</string>
     <string name="partidos_anteriores">Partidos Anteriores</string>
+    <string name="de_la_salle_bajio">Universidad De La Salle Bajío</string>
+    <string name="campeon">Campeón</string>
+    <string name="sub_campeon">Sub - Campeón</string>
   
     <string name="hello">Hello World, Click Me!</string>
     <string name="app_name">Lasallistas.Droid</string>
