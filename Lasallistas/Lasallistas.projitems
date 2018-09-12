@@ -11,6 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Data\Remote.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Universidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Cancha.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Deporte.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Partido.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Data\" />
