@@ -104,4 +104,6 @@
                 android:text="PG-6 PP-1 PE-1" />
         </LinearLayout>
     </LinearLayout>
+
+	<!-- Aquí iría el TabBar -->
 </LinearLayout>

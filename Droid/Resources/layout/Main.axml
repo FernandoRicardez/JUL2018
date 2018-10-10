@@ -163,4 +163,6 @@
                 android:text="Cancha 2" />
         </LinearLayout>
     </LinearLayout>
+
+	<!-- Aquí iría el TabBar -->
 </LinearLayout>
