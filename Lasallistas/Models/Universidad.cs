@@ -1,6 +1,5 @@
 ﻿using System;
 using Lasallistas.Data;
-using Newtonsoft.Json;
 
 namespace Lasallistas.Models
 {
@@ -12,7 +11,6 @@ namespace Lasallistas.Models
         public string Nombre { get; set; }
         public string Siglas { get; set; }
         public string Abreviatura { get; set; }
-        public int Students_In_Group { get; set; }
 
         //public static void GetRemoteDataForParent(long parentId, int year, int month, Callback callback)
         //{

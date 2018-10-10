@@ -3,6 +3,8 @@ namespace Lasallistas.Models
 {
     public class Cancha
     {
+        static readonly TipoUbicacionEnum TipoUbicacion = TipoUbicacionEnum.Cancha;
+
         public long Id_Cancha
         {
             get;
@@ -16,7 +18,13 @@ namespace Lasallistas.Models
      
         }
 
-        public string Ubicacion
+        public double Lat
+        {
+            get;
+            set;
+        }
+
+        public double Long
         {
             get;
             set;

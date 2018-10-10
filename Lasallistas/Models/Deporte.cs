@@ -21,8 +21,11 @@ namespace Lasallistas.Models
             set;
         }
 
-        public Deporte()
+        public Deporte(long id,string nombre,int tiempos)
         {
+            Id_Deporte = id;
+            Nombre = nombre;
+            Tiempos = tiempos;
         }
     }
 }

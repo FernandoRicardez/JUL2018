@@ -4,7 +4,6 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Plugin.Connectivity;
 
 namespace Lasallistas.Data
 {
@@ -14,22 +13,15 @@ namespace Lasallistas.Data
 
         #if DEBUG
         public bool UseLocalDemo { get => false; }
-        string Server { get => "http://192.168.0.13:8080/web"; }
-        //string Server { get => "https://www.idc.edu.mx/QA/Jesuitas_webServices/web"; }
+        string Server { get => "http://192.168.0.0:8080/api"; }
+        //string Server { get => "https://www.pagina.mx/QA/api"; }
         #else
         public bool UseLocalDemo { get => false; }
-        string Server { get => "https://www.idc.edu.mx/QA/Jesuitas_webServices/web"; }
+        string Server { get => "https://www.pagina.mx/api"; }
         #endif
-        public string ApiDailyMenu { get => Server + "/api/portalfamiliar/parents/{parentId}/daily-menu"; }
-        public string ApiHygiene { get => Server + "/api/portalfamiliar/parents/{parentId}/hygiene"; }
-        public string ApiLogin { get => Server + "/api/portalfamiliar/login"; }
-        public string ApiNews { get => Server + "/api/portalfamiliar/parents/{parentId}/news"; }
-        public string ApiNewsSearch { get => Server + "/api/portalfamiliar/parents/{parentId}/news/search"; }
-        public string ApiPasswordChange { get => Server + "/api/portalfamiliar/CambiarPassword"; }
-        public string ApiPasswordRecovery { get => Server + "/api/portalfamiliar/RecuperarPassword"; }
-        public string ApiReport { get => Server + "/api/portalfamiliar/parents/{parentId}/report"; }
-        public string ApiStock { get => Server + "/api/portalfamiliar/parents/{parentId}/stock"; }
-        public string ApiStudentsByParent { get => Server + "/api/portalfamiliar/AlumnoPorPadreTutor/{parentId}"; }
+        public string Apiruta { get => Server + "/api/ruta"; }
+        public string Apiruta2 { get => Server + "/api/ruta2"; }
+        public string ApiGetCancha { get => Server + "/api/api/{canchaId}"; }
 
         static readonly Remote _shared = new Remote();
 
@@ -37,11 +29,11 @@ namespace Lasallistas.Data
 
         public async Task RequestString(string method, string path, Dictionary<string, string> headers, string data, StringCallback onResponse)
         {
-            if (!CrossConnectivity.Current.IsConnected)
+            /*if (!CrossConnectivity.Current.IsConnected)
             {
                 onResponse?.Invoke(null, "Sin conexión");
                 return;
-            }
+            }*/
                 
             #if __IOS__
             UIKit.UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true;
